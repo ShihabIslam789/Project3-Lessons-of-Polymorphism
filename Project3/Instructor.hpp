@@ -6,36 +6,42 @@
 //  Created by Shihab Islam
 //  Modified on 5/30/20
 
-#ifndef INSTRUCTOR
-#define INSTRUCTOR
+#ifndef _INSTRUCTOR_
+#define _INSTRUCTOR_
 #include "Person.hpp"
 #include <string>
 
 class Instructor :public Person {
 public:
+	//default constructor 
+	Instructor();
 
-	Instructor(); //default constructor 
-
-	// paramertized constructor
-	// @param id: is id of instructor
-	// @param first: is first name of instructor
-	//@ param LAST : is last naame of instructor
+	//constructor
+	//@param id the id of the instructor
+	//@param first the first name of the instructor
+	//@param last the last name of the instructor
 	Instructor(int id, std::string first, std::string last);
 
-	//access function: return office room
+	//accessor  function
+	//returns: the office name
 	std::string getOffice() const;
 
-	//access function: return contact info.
+	//accessor funcntion
+	//returns: contact info of the instructor
 	std::string getContact() const;
 
-	//mutator fucntion: return valid office info.
+	//mutator function: changes room number
+	//@param office the office of the instructor
 	void setOffice(const std::string office);
 
-	//mutator fucntion: return valid contact info.
+	//mutator function: changes contact info 
+	//@param contact the contact info of the instructor
 	void setContact(const std::string contact);
 private:
 	std::string office_;
 	std::string contact_;
 };
 
+
 #endif
+

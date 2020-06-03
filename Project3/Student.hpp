@@ -6,42 +6,42 @@
 //
 //  Created by Shihab Islam
 //  Modified on 5/30/20
+
 #ifndef _STUDENT_
 #define _STUDENT_
 #include "Person.hpp"
 #include <string>
 
-class Student :public Person { //student (inherited class), person (base class)
+class Student :public Person { //student is inherited class, person is base class
 public:
-	//default constructor for student
+	//default constructor for student by editor
 	Student();
 
-	// paramertized constructor
-	// @param id: is id of student
-	// @param first: is first name of Student
-	//@ paraM LAST : is last naame of student
+
+	// param constructor
 	Student(int id, std::string first, std::string last);
 
-	//access function: return major_
+	//accessor function: returns major_
+	//returns:  student's major
 	std::string getMajor() const;
 
 
-	//access function: returns gpa_
+	//accessor function: returns gpa_
+	//returns: student's gpa
 	double getGpa() const;
 
-	//mutator fucntion: sets major_ to major
+	//mutator function: sets major_ to major
+	//@param major: the student's major
 	void setMajor(const std::string major);
 
 	//mutator function: sets gpa_ to gpa
+	//@param gpa: student's gpa(between 0 and 4)
 	void setGpa(const double gpa);
-
-	
-
-private:
+protected:
 	//protected data members
 	std::string major_;
 	double gpa_;
 };
 
 
-#endif
+#endif 

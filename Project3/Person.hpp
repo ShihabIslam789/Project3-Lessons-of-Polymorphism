@@ -4,51 +4,37 @@
 //  Description: A simple class to illustrate basic OOP and inheritance concept
 //               Person is a base class for people enrolled in a course
 //
-//  originally Created by Tiziana Ligorio on 1/14/19.
+//  Created by Tiziana Ligorio on 1/14/19.
 //  Modified on 5/27/20
 
-#ifndef PERSON
-#define PERSON
+#ifndef _PERSON_
+#define _PERSON_
 #include <string>
 
 class Person {
 public:
-
-
+	//default constructor
 	Person();
 
-	//@param id: returns id of person
-	//@param first: returns first name of person
-	//@param last: returns lastname of person 
-
+	//@param id unique id of person
+	//@param first firstname of person	
+	//@param last lastname of person object 
+	//param constructor
 	Person(int id, std::string first, std::string last);
 
-	/** @param: id the vaule of id_*/
-	int setID(int id);
-
-	/** @param:  first will be the value of first_name_ */
-	std::string setFirstName(std::string first);
-
-	/** @param: last will be the value of last_name_ */
-	std::string setLastName(std::string last);
-
-
-
-	//access function:  returns ID
+	//accessor function: returns ID
+	//returns:  value of ID
 	int getID() const;
 
-	//access function: returns first name
-
+	//accessor function: returns first name
+	//returns: firstname of person object
 	std::string getFirstName() const;
 
-	//access function: returns last name
-
+	//accessor - returns last name
+	//returns: lastname of person object
 	std::string getLastName() const;
-
-	// acessor function to test inherhitance
-	std::string inheritanceTest() const;
 protected:
-	//protected data members(information hiding)
+	//protected data members
 	int id_;
 	std::string first_name_;
 	std::string last_name_;
