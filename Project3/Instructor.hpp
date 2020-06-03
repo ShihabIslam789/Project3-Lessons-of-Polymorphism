@@ -38,4 +38,4 @@ private:
 	std::string contact_;
 };
 
-
+#endif

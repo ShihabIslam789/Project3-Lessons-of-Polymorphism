@@ -6,8 +6,8 @@
 //
 //  Created by Shihab Islam
 //  Modified on 5/30/20
-#ifndef STUDENT
-#define STUDENT
+#ifndef _STUDENT_
+#define _STUDENT_
 #include "Person.hpp"
 #include <string>
 
@@ -34,7 +34,10 @@ public:
 
 	//mutator function: sets gpa_ to gpa
 	void setGpa(const double gpa);
-protected:
+
+	
+
+private:
 	//protected data members
 	std::string major_;
 	double gpa_;

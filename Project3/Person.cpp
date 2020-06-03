@@ -25,7 +25,20 @@ Person::Person(int id, std::string first, std::string last) {
 	first_name_ = first;
 	last_name_ = last;
 }
+/** @param: id the vaule of id_*/
+int Person::setID(int id) {
+	id_ = id;
+}
 
+/** @param:  first will be the value of first_name_ */
+std::string Person::setFirstName(std::string first) {
+	first_name_ = first;
+}
+
+/** @param: last will be the value of last_name_ */
+std::string Person::setLastName(std::string last) {
+	last_name_ = last;
+}
 //access function:  returns ID
 int Person::getID() const {
 	return id_;
@@ -39,4 +52,9 @@ std::string Person::getFirstName() const {
 //access function: returns last name
 std::string Person::getLastName() const {
 	return last_name_;
+}
+// acess function test if properly inherited
+std::string Person::inheritanceTest() const
+{
+	return "passed inheritance test!";
 }

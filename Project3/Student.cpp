@@ -9,9 +9,10 @@
 #include "Student.hpp"
 #include "Person.hpp"
 #include <string>
+using namespace std;
 
 
-Student::Student() :Person() {//default constructor for student
+Student::Student(): Person() {//default constructor for student
 	major_ = "";
 	gpa_ = 0;
 }
@@ -42,6 +43,8 @@ void Student::setMajor(const std::string major) {
 }
 
 //mutator function: sets gpa_ to gpa
-void Student::setGpa(const double gpa) {
+void Student::setGpa(const double gpa) {\
+if (gpa > 0 && gpa <= 4.0) {
 	gpa_ = gpa;
+}
 }

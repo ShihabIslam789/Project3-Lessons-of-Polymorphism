@@ -23,6 +23,17 @@ public:
 
 	Person(int id, std::string first, std::string last);
 
+	/** @param: id the vaule of id_*/
+	int setID(int id);
+
+	/** @param:  first will be the value of first_name_ */
+	std::string setFirstName(std::string first);
+
+	/** @param: last will be the value of last_name_ */
+	std::string setLastName(std::string last);
+
+
+
 	//access function:  returns ID
 	int getID() const;
 
@@ -33,6 +44,9 @@ public:
 	//access function: returns last name
 
 	std::string getLastName() const;
+
+	// acessor function to test inherhitance
+	std::string inheritanceTest() const;
 protected:
 	//protected data members(information hiding)
 	int id_;

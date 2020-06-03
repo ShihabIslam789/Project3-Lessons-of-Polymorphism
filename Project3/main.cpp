@@ -1,7 +1,7 @@
-#include "Person.hpp"
-#include "Student.hpp"
-#include "TeachingAssistant.hpp"
-#include "Instructor.hpp"
+#include "Person.cpp"
+#include "Student.cpp"
+#include "TeachingAssistant.cpp"
+#include "Instructor.cpp"
 #include <iostream>
 using namespace std;
 

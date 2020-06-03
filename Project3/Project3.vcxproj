@@ -25,6 +25,7 @@
     <ClInclude Include="TeachingAssistant.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Instructor.cpp" />
